@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Shop</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0d0d0d;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 2px solid #00ffff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ff00ff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1606813909355-0e1c9d7d1c2c') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #00ffcc;
+      text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .product-card {
+      background-color: #1a1a1a;
+      border: 2px solid #ff00ff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #ff00ff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff00ff;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #00ffff;
+    }
+
+    .product-info p {
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    .product-info .price {
+      color: #ff00ff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-shadow: 0 0 5px #ff00ff;
+    }
+
+    .product-info button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      text-shadow: 0 0 5px #00ffcc;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .product-info button:hover {
+      background-color: #00ffcc;
+      color: #000;
+      text-shadow: none;
+    }
+
+    footer {
+      background-color: #0d0d0d;
+      text-align: center;
+      padding: 20px 0;
+      border-top: 2px solid #00ffff;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Neon Shop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Glow in Style with Our Neon Collection</h2>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1a5" alt="Neon Sneakers">
+      <div class="product-info">
+        <h3>Neon Sneakers</h3>
+        <p>Step into the future with our glowing sneakers.</p>
+        <p class="price">$89.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1614287751469-6e9f5a3a2e3b" alt="Neon Jacket">
+      <div class="product-info">
+        <h3>Neon Jacket</h3>
+        <p>Stay warm and visible with our neon jackets.</p>
+        <p class="price">$129.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1606813909355-0e1c9d7d1c2c" alt="Neon Hat">
+      <div class="product-info">
+        <h3>Neon Hat</h3>
+        <p>Top off your look with a bright neon hat.</p>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Neon Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
